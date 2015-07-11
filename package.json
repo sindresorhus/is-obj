@@ -1,0 +1,32 @@
+{
+  "name": "is-obj",
+  "version": "0.0.0",
+  "description": "Check if a value is an object",
+  "license": "MIT",
+  "repository": "sindresorhus/is-obj",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "obj",
+    "object",
+    "is",
+    "check",
+    "test",
+    "type"
+  ],
+  "devDependencies": {
+    "ava": "0.0.4"
+  }
+}
