@@ -25,7 +25,7 @@ isObj([1, 2, 3]);
 //=> true
 
 isObj('foo');
-//=> true
+//=> false
 ```
 
 
