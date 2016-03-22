@@ -3,7 +3,7 @@ import m from './';
 
 test(t => {
 	t.true(m({}));
-	t.true(m(new Object()));
+	t.true(m(new Object())); // eslint-disable-line
 	t.true(m(new Date()));
 	t.true(m(new RegExp()));
 	t.true(m(Object.create(null)));
