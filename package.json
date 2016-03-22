@@ -1,6 +1,6 @@
 {
   "name": "is-obj",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Check if a value is an object",
   "license": "MIT",
   "repository": "sindresorhus/is-obj",
