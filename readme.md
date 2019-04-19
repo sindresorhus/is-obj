@@ -9,7 +9,7 @@ See [`is-plain-obj`](https://github.com/sindresorhus/is-plain-obj) if you want t
 ## Install
 
 ```
-$ npm install --save is-obj
+$ npm install is-obj
 ```
 
 
