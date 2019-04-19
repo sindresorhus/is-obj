@@ -1,25 +1,27 @@
 import test from 'ava';
-import m from './';
+import isObj from '.';
 
-test(t => {
-	t.true(m({}));
-	t.true(m(new Object())); // eslint-disable-line
-	t.true(m(new Date()));
-	t.true(m(new RegExp()));
-	t.true(m(Object.create(null)));
-	t.true(m({foo: true}));
-	t.true(m([]));
-	t.true(m(['foo', 'bar']));
-	t.true(m(() => {}));
-	t.true(m(arguments));
-	t.true(m(/./));
-	t.true(m(Object(0)));
-	t.true(m(Object('foo')));
-	t.true(m(Object(false)));
-	t.false(m(null));
-	t.false(m(undefined));
-	t.false(m(NaN));
-	t.false(m(''));
-	t.false(m(0));
-	t.false(m(false));
+test('main', function (t) {
+	/* eslint-disable no-new-object */
+	t.true(isObj({}));
+	t.true(isObj(new Object()));
+	t.true(isObj(new Date()));
+	t.true(isObj(new RegExp()));
+	t.true(isObj(Object.create(null)));
+	t.true(isObj({foo: true}));
+	t.true(isObj([]));
+	t.true(isObj(['foo', 'bar']));
+	t.true(isObj(() => {}));
+	t.true(isObj(arguments)); // eslint-disable-line prefer-rest-params
+	t.true(isObj(/./));
+	t.true(isObj(new Object(0)));
+	t.true(isObj(new Object('foo')));
+	t.true(isObj(new Object(false)));
+	t.false(isObj(null));
+	t.false(isObj(undefined));
+	t.false(isObj(NaN));
+	t.false(isObj(''));
+	t.false(isObj(0));
+	t.false(isObj(false));
+	/* eslint-enable no-new-object */
 });
