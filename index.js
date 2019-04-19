@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = x => {
-	const type = typeof x;
-	return x !== null && (type === 'object' || type === 'function');
+module.exports = value => {
+	const type = typeof value;
+	return value !== null && (type === 'object' || type === 'function');
 };

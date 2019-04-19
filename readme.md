@@ -16,17 +16,22 @@ $ npm install is-obj
 ## Usage
 
 ```js
-const isObj = require('is-obj');
+const isObject = require('is-obj');
 
-isObj({foo: 'bar'});
+isObject({foo: 'bar'});
 //=> true
 
-isObj([1, 2, 3]);
+isObject([1, 2, 3]);
 //=> true
 
-isObj('foo');
+isObject('foo');
 //=> false
 ```
+
+
+## Related
+
+- [is](https://github.com/sindresorhus/is) - Type check values
 
 
 ## License

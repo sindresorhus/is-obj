@@ -5,18 +5,18 @@ Keep in mind that array, function, regexp, etc, are objects in JavaScript.
 
 @example
 ```
-import isObj = require('is-obj');
+import isObject = require('is-obj');
 
-isObj({foo: 'bar'});
+isObject({foo: 'bar'});
 //=> true
 
-isObj([1, 2, 3]);
+isObject([1, 2, 3]);
 //=> true
 
-isObj('foo');
+isObject('foo');
 //=> false
 ```
 */
-declare function isObj(x: unknown): x is object;
+declare function isObject(value: unknown): value is object;
 
-export = isObj;
+export = isObject;

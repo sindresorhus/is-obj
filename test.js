@@ -1,27 +1,26 @@
 import test from 'ava';
-import isObj from '.';
+import isObject from '.';
 
-test('main', function (t) {
+test('main', t => {
 	/* eslint-disable no-new-object */
-	t.true(isObj({}));
-	t.true(isObj(new Object()));
-	t.true(isObj(new Date()));
-	t.true(isObj(new RegExp()));
-	t.true(isObj(Object.create(null)));
-	t.true(isObj({foo: true}));
-	t.true(isObj([]));
-	t.true(isObj(['foo', 'bar']));
-	t.true(isObj(() => {}));
-	t.true(isObj(arguments)); // eslint-disable-line prefer-rest-params
-	t.true(isObj(/./));
-	t.true(isObj(new Object(0)));
-	t.true(isObj(new Object('foo')));
-	t.true(isObj(new Object(false)));
-	t.false(isObj(null));
-	t.false(isObj(undefined));
-	t.false(isObj(NaN));
-	t.false(isObj(''));
-	t.false(isObj(0));
-	t.false(isObj(false));
+	t.true(isObject({}));
+	t.true(isObject(new Object()));
+	t.true(isObject(new Date()));
+	t.true(isObject(new RegExp()));
+	t.true(isObject(Object.create(null)));
+	t.true(isObject({foo: true}));
+	t.true(isObject([]));
+	t.true(isObject(['foo', 'bar']));
+	t.true(isObject(() => {}));
+	t.true(isObject(/./));
+	t.true(isObject(new Object(0)));
+	t.true(isObject(new Object('foo')));
+	t.true(isObject(new Object(false)));
+	t.false(isObject(null));
+	t.false(isObject(undefined));
+	t.false(isObject(NaN));
+	t.false(isObject(''));
+	t.false(isObject(0));
+	t.false(isObject(false));
 	/* eslint-enable no-new-object */
 });
