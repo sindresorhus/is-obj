@@ -1,4 +1,4 @@
-# is-obj [![Build Status](https://travis-ci.org/sindresorhus/is-obj.svg?branch=master)](https://travis-ci.org/sindresorhus/is-obj)
+# is-obj
 
 > Check if a value is an object
 
