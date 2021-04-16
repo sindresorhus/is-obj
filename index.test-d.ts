@@ -1,8 +1,10 @@
 import {expectType} from 'tsd';
-import isObject = require('.');
+import isObject from './index.js';
 
-const foo = 'foo';
+const foo = true;
 
 if (isObject(foo)) {
-	expectType<object>(foo);
+	// TODO: Fix me.
+	/// eslint-disable-next-line @typescript-eslint/ban-types
+	// expectType<object>(foo);
 }

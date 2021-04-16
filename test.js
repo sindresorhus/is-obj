@@ -1,5 +1,5 @@
 import test from 'ava';
-import isObject from '.';
+import isObject from './index.js';
 
 test('main', t => {
 	/* eslint-disable no-new-object */
@@ -18,7 +18,7 @@ test('main', t => {
 	t.true(isObject(new Object(false)));
 	t.false(isObject(null));
 	t.false(isObject(undefined));
-	t.false(isObject(NaN));
+	t.false(isObject(Number.NaN));
 	t.false(isObject(''));
 	t.false(isObject(0));
 	t.false(isObject(false));

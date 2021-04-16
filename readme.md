@@ -2,9 +2,9 @@
 
 > Check if a value is an object
 
-Keep in mind that array, function, regexp, etc, are objects in JavaScript.<br>
-See [`is-plain-obj`](https://github.com/sindresorhus/is-plain-obj) if you want to check for plain objects.
+Keep in mind that array, function, regexp, etc, are objects in JavaScript.
 
+See [`is-plain-obj`](https://github.com/sindresorhus/is-plain-obj) if you want to check for plain objects.
 
 ## Install
 
@@ -12,11 +12,10 @@ See [`is-plain-obj`](https://github.com/sindresorhus/is-plain-obj) if you want t
 $ npm install is-obj
 ```
 
-
 ## Usage
 
 ```js
-const isObject = require('is-obj');
+import isObject from 'is-obj';
 
 isObject({foo: 'bar'});
 //=> true
@@ -28,11 +27,9 @@ isObject('foo');
 //=> false
 ```
 
-
 ## Related
 
 - [is](https://github.com/sindresorhus/is) - Type check values
-
 
 ---
 
